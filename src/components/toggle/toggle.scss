@@ -1,0 +1,39 @@
+@import "../../app.scss";
+
+.t {
+  width: 60px;
+  height: 33px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 35px;
+  right: 15px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include mobile {
+    top: 20px;
+  }
+
+  .t-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .t-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(rgb(93, 38, 183), rgb(57, 117, 219));
+    position: absolute;
+    cursor: pointer;
+    @include mobile {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

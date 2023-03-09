@@ -1,0 +1,234 @@
+@import "../../app.scss";
+
+.project {
+  display: flex;
+  align-items: center;
+  height: 500px;
+
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+    h2 {
+      margin: 10px 0;
+      top: 0;
+    }
+    .skillsUsed {
+      margin-top: 10px;
+      height: 40px;
+      @include mobile {
+        height: 100px;
+        margin-top: 230px;
+      }
+      @include tablet {
+        height: 100px;
+        margin-top: 300px;
+      }
+
+      span {
+        font-size: 17px;
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, rgb(93, 38, 183), rgba(0, 0, 0, 0)) 1 100%;
+        text-decoration: none;
+        padding: 5px 15px;
+        margin-right: 10px;
+      }
+    }
+
+    p {
+      height: 200px;
+
+      @include mobile {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      @include tablet {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      @include laptop {
+        margin-top: 10px;
+
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .buttons {
+      button {
+        padding: 10px 20px;
+        margin: 20px 10px 0 0;
+        background-image: linear-gradient(rgb(93, 38, 183), rgb(57, 117, 219));
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          scale: 1.2;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        @include mobile {
+          display: flex;
+          padding: 10px 10px;
+          margin: 20px 2px 0 0;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        @include tablet {
+          display: flex;
+          padding: 10px 10px;
+          margin: 20px 2px 0 0;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        @include laptop {
+          display: flex;
+          padding: 10px 10px;
+          margin: 20px 2px 0 0;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    .image {
+      width: 440px;
+      height: 350px;
+      object-fit: cover;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    .left {
+      width: 100%;
+      .skillsUsed {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 2px;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 14px;
+          padding: 5px 10px;
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      position: absolute;
+
+      .image {
+        position: relative;
+        top: 30px;
+        overflow: hidden;
+        width: 400px;
+        margin-top: 30px;
+        height: 200px;
+      }
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    .left {
+      width: 100%;
+      .skillsUsed {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 2px;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 14px;
+          padding: 5px 10px;
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      justify-content: center;
+      width: 86%;
+
+      .image {
+        position: relative;
+        margin-top: 60px;
+        overflow: hidden;
+        width: 600px;
+        height: 280px;
+      }
+    }
+  }
+  @include laptop {
+    height: auto;
+    margin-bottom: 70px;
+    .left {
+      margin-right: 10px;
+      .skillsUsed {
+        height: auto;
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 2px;
+        margin-bottom: 10px;
+
+        span {
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      .image {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+}

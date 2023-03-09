@@ -1,0 +1,108 @@
+@import "../../app.scss";
+
+.skills {
+  background: rgb(52, 19, 117);
+  background: linear-gradient(50deg, rgba(52, 19, 117, 1) 17%, rgba(52, 71, 189, 1) 72%);
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin-left: 15%;
+    width: 12%;
+    display: flex;
+    position: relative;
+    left: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 0 0 0;
+
+    cursor: pointer;
+  }
+
+  span:after {
+    background: none repeat scroll 0 0 transparent;
+    top: 50px;
+    content: "";
+    display: block;
+    height: 12px;
+    position: absolute;
+    background: rgba(181, 84, 158, 0.456);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  span:hover:after {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+  // add here a highlight line with the gradient color underneath
+
+  .containerSkills {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 15%;
+
+    padding: 40px 0px 50px 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    .skill-item {
+      width: 100%;
+      display: flex;
+
+      .icon {
+        font-size: 4.3rem;
+        color: white;
+        padding: 10px;
+
+        @include mobile {
+          font-size: 4rem;
+        }
+      }
+
+      .color-hover:hover {
+        color: #887aba;
+        scale: 1.2;
+        transition: ease-in-out 0.05s;
+      }
+    }
+  }
+
+  @include mobile {
+    span {
+      margin-left: 7%;
+      width: 30%;
+    }
+    .containerSkills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(4em, 0rem));
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+  @include tablet {
+    span {
+      margin-left: 7%;
+      width: 30%;
+    }
+    .containerSkills {
+      display: grid;
+      grid-template-columns: 90px 90px 90px 90px;
+      grid-template-rows: 90px 90px;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+  }
+  @include laptop {
+    span {
+      margin: 0 7%;
+    }
+  }
+}

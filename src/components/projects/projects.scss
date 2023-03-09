@@ -1,0 +1,27 @@
+@import "../../app.scss";
+
+.projects {
+  margin: 0 15%;
+  margin-top: 140px;
+  padding-bottom: 140px;
+  span {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  @include mobile {
+    margin: 0 7%;
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+  @include tablet {
+    margin: 0 7%;
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+  @include laptop {
+    margin: 0 7%;
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+}
