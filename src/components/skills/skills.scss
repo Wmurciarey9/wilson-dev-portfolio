@@ -2,7 +2,11 @@
 
 .skills {
   background: rgb(52, 19, 117);
-  background: linear-gradient(50deg, rgba(52, 19, 117, 1) 17%, rgba(52, 71, 189, 1) 72%);
+  background: linear-gradient(
+    50deg,
+    rgba(52, 19, 117, 1) 17%,
+    rgba(52, 71, 189, 1) 72%
+  );
   align-items: center;
   justify-content: center;
 
@@ -17,7 +21,6 @@
     font-weight: 600;
     text-decoration: none;
     padding: 10px 0 0 0;
-
     cursor: pointer;
   }
 
@@ -70,7 +73,7 @@
       .color-hover:hover {
         color: #887aba;
         scale: 1.2;
-        transition: ease-in-out 0.05s;
+        transition: ease-in-out 0.3s;
       }
     }
   }

@@ -31,7 +31,12 @@
         font-size: 17px;
         border-width: 3px;
         border-style: solid;
-        border-image: linear-gradient(to bottom, rgb(93, 38, 183), rgba(0, 0, 0, 0)) 1 100%;
+        border-image: linear-gradient(
+            to bottom,
+            rgb(93, 38, 183),
+            rgba(0, 0, 0, 0)
+          )
+          1 100%;
         text-decoration: none;
         padding: 5px 15px;
         margin-right: 10px;
@@ -74,7 +79,8 @@
         border: none;
         cursor: pointer;
         &:hover {
-          scale: 1.2;
+          scale: 1.1;
+          transition: ease-in-out 0.3s;
         }
         a {
           text-decoration: none;
