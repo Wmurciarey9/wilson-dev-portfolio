@@ -21,7 +21,7 @@ export const Projects = () => {
       <Project
         title="Ecommerce Store"
         img={Ecommerce}
-        liveUrl="wilreym-ecom.netlify.app"
+        liveUrl="https://wilreym-ecom.netlify.app/"
         gitHub="https://github.com/Wmurciarey9/eCommerce-store"
         description="Completely functional eCommerce store website. In this case I set up a wallet store. New items can be added throught the admin site if you are registered as an admin. It also manages cart updates and processes payments."
         techOne="React"
