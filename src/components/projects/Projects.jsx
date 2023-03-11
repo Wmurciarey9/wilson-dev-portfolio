@@ -2,6 +2,7 @@ import React from "react";
 import { Project } from "../project/Project";
 import "./projects.scss";
 import Ecommerce from "../images/eCommerce.png";
+import Connectify from "../images/Connectify-ss.png";
 
 export const Projects = () => {
   return (
@@ -24,6 +25,17 @@ export const Projects = () => {
         liveUrl="https://wilreym-ecom.netlify.app/"
         gitHub="https://github.com/Wmurciarey9/eCommerce-store"
         description="Completely functional eCommerce store website. In this case I set up a wallet store. New items can be added throught the admin site if you are registered as an admin. It also manages cart updates and processes payments."
+        techOne="React"
+        techTwo="Saas"
+        techThree="Strapi"
+        techFour="MySQL"
+      />
+      <Project
+        title="Connectify - A meetup inspired clone"
+        img={Connectify}
+        liveUrl="https://wilreym-connectify.netlify.app/"
+        gitHub="https://github.com/Wmurciarey9/connectify"
+        description="I am building a clone for meetup. My intent is that in the future it can be it's own app with it's own features but similar workflow as meetup, since in Colombia we don't have something like that. I intend to create and deploy in stores eventually. "
         techOne="React"
         techTwo="Saas"
         techThree="Strapi"
