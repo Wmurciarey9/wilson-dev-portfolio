@@ -3,7 +3,7 @@ import { Project } from "../project/Project";
 import "./projects.scss";
 import Ecommerce from "../images/eCommerce.png";
 import Connectify from "../images/Connectify-ss.png";
-import CarRental from "../images/Car-rental.png";
+import Car from "../images/Car-rental.png";
 
 export const Projects = () => {
   return (
@@ -11,7 +11,7 @@ export const Projects = () => {
       <span>PROJECTS</span>
       <Project
         title="Car Rental"
-        img={CarRental}
+        img={Car}
         liveUrl="https://wilreym-car-rental.netlify.app/"
         gitHub="https://github.com/Wmurciarey9/car-rental"
         description="Car rental website in progress. The idea is to have it fully functional and market ready. Take a look at the UI in the meantime."
@@ -43,7 +43,7 @@ export const Projects = () => {
         techThree="Strapi"
         techFour="MySQL"
       />
-      <Project
+      {/* <Project
         title="Booking App"
         img=""
         liveUrl=""
@@ -53,7 +53,7 @@ export const Projects = () => {
         techTwo="Saas"
         techThree="Strapi"
         techFour="MySQL"
-      />
+      /> */}
       <Project
         title="Netflix Clone"
         img="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmV0ZmxpeHxlbnwwfHwwfHw%3D&w=1000&q=80"
