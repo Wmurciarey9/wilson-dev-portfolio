@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context";
 import "./project.scss";
 
 export const Project = (props) => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
-    <div className="project">
+    <div
+      className="project"
+      style={{
+        backgroundImage:
+          darkMode &&
+          'url("https://www.transparenttextures.com/patterns/diagmonds.png")',
+        backgroundColor: "black",
+      }}
+    >
       <div className="left">
         <h2>{props.title}</h2>
         <div className="skillsUsed">
