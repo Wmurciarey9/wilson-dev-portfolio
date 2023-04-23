@@ -51,7 +51,6 @@
     justify-content: center;
     text-align: center;
     margin: 0 15%;
-
     padding: 40px 0px 50px 0;
     display: flex;
     justify-items: center;
@@ -59,7 +58,6 @@
 
     .skill-item {
       width: 100%;
-      display: flex;
 
       .icon {
         font-size: 4.3rem;
@@ -93,15 +91,20 @@
   }
   @include media(">=phone", "<=425px") {
     span {
-      margin-left: 7%;
-      width: 30%;
+      width: 70%;
+      justify-content: center;
     }
     .containerSkills {
       display: grid;
-      grid-template-columns: 90px 90px 90px 90px;
-      grid-template-rows: 90px 90px;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      .skill-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }
