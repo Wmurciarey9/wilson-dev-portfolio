@@ -16,7 +16,7 @@ export const Project = (props) => {
         <p>{props.description}</p>
 
         <div className="buttons">
-          <button>
+          <button className="whiteBtn">
             <a href={props.liveUrl} target="_blank">
               See Live
             </a>

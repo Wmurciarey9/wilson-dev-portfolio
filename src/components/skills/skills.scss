@@ -1,4 +1,5 @@
 @import "../../app.scss";
+@import "../../breakpoints/breakpoints.scss";
 
 .skills {
   background: rgb(52, 19, 117);
@@ -78,10 +79,10 @@
     }
   }
 
-  @include mobile {
+  @include media("<=phone") {
     span {
-      margin-left: 7%;
-      width: 30%;
+      justify-content: center;
+      width: 70%;
     }
     .containerSkills {
       display: grid;
@@ -90,7 +91,7 @@
       justify-content: center;
     }
   }
-  @include tablet {
+  @include media(">=phone", "<=425px") {
     span {
       margin-left: 7%;
       width: 30%;
@@ -103,9 +104,9 @@
       grid-row-gap: 20px;
     }
   }
-  @include laptop {
-    span {
-      margin: 0 7%;
-    }
+}
+@include media(">=425px", "<=tablet") {
+  span {
+    margin: 0 7%;
   }
 }

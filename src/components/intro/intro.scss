@@ -1,4 +1,5 @@
-@import "../../app.scss";
+// @import "../../app.scss";
+@import "../../breakpoints/breakpoints.scss";
 
 .intro {
   display: flex;
@@ -19,6 +20,26 @@
     -webkit-text-fill-color: transparent;
   }
 
+  .resumeArrow {
+    display: flex;
+    position: absolute;
+    top: 110px;
+    right: 40px;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    img {
+      width: 30%;
+      rotate: 90deg;
+      left: 70px;
+    }
+    p {
+      position: absolute;
+      right: 110px;
+      top: 20px;
+    }
+  }
+
   .miniNavbar {
     padding: 30px 30px 30px 0;
 
@@ -29,7 +50,12 @@
       font-weight: 600;
       border-width: 3px;
       border-style: solid;
-      border-image: linear-gradient(to bottom, rgb(93, 38, 183), rgba(0, 0, 0, 0)) 1 100%;
+      border-image: linear-gradient(
+          to bottom,
+          rgb(93, 38, 183),
+          rgba(0, 0, 0, 0)
+        )
+        1 100%;
       text-decoration: none;
       display: inline-block;
       position: relative;
@@ -70,40 +96,61 @@
     }
   }
 
-  @include mobile {
+  @include media("<=phone") {
     margin: 0 7%;
+
     h1 {
       font-size: 50px;
     }
     h2 {
       font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .resumeArrow {
+      right: 10px;
     }
 
     .miniNavbar {
+      padding: 0;
+
+      height: auto;
+
       span {
-        padding: 5px 10px;
-        margin-right: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+        padding: 10px;
+        width: 80px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        height: 10%;
       }
     }
   }
-
-  @include tablet {
-    margin: 0 7%;
-    h1 {
-      font-size: 55px;
-    }
-    h2 {
-      font-size: 30px;
-    }
-
-    .miniNavbar {
-      span {
-        padding: 5px 10px;
-        margin-right: 20px;
-      }
-    }
+  @include media(">=phone", "<=425px") {
   }
-  @include laptop {
-    margin: 0 7%;
+  @include media(">=425px", "<=tablet") {
   }
 }
+
+//   @include tablet {
+//     margin: 0 7%;
+//     h1 {
+//       font-size: 55px;
+//     }
+//     h2 {
+//       font-size: 30px;
+//     }
+
+//     .miniNavbar {
+//       span {
+//         padding: 5px 10px;
+//         margin-right: 20px;
+//       }
+//     }
+//   }
+//   @include laptop {
+//     margin: 0 7%;
+//   }
+// }

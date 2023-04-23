@@ -13,6 +13,9 @@
     margin: 0 7%;
     margin-top: 140px;
     margin-bottom: 140px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   @include tablet {
     margin: 0 7%;

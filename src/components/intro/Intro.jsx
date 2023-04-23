@@ -1,6 +1,7 @@
 import React from "react";
 import "./intro.scss";
 import { Link } from "react-router-dom";
+import Arrow from "../images/arrow.gif";
 
 export const Intro = () => {
   return (
@@ -10,7 +11,10 @@ export const Intro = () => {
       </h1>
 
       <h2>I'M A SOFTWARE DEVELOPER</h2>
-
+      <div className="resumeArrow">
+        <img src={Arrow} alt="" />
+        <p>Get my CV here!</p>
+      </div>
       <div className="miniNavbar">
         <span>Skills</span>
         <span>Projects</span>

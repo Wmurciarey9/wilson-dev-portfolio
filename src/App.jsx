@@ -9,13 +9,15 @@ const App = () => {
   const darkMode = theme.state.darkmode;
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
+    <div className="app">
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
 
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 };
 

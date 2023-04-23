@@ -7,7 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../context";
-import resume from "./CVWilsonDev.pdf";
+import WilsonDevCV from "./CVWilsonDev.pdf";
 
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional
@@ -66,7 +66,7 @@ export const Navbar = () => {
             </a>
           </div>
           <div className="iconItem">
-            <a href={resume} download="resume.pdf">
+            <a href={WilsonDevCV} download="CVWilsonDev.pdf">
               <Tippy content="Resume">
                 <InsertDriveFileIcon
                   className="icon"

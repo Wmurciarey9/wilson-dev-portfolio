@@ -14,7 +14,7 @@ export const Projects = () => {
         img={Car}
         liveUrl="https://wilreym-car-rental.netlify.app/"
         gitHub="https://github.com/Wmurciarey9/car-rental"
-        description="Car rental website in progress. The idea is to have it fully functional and market ready. Take a look at the UI in the meantime."
+        description="Car rental. Fully functional and market ready. Personal or business needs, search and reserve your cars."
         techOne="React"
         techTwo="Saas"
         techThree="HTML"
@@ -37,7 +37,7 @@ export const Projects = () => {
         img={Connectify}
         liveUrl="https://wilreym-connectify.netlify.app/"
         gitHub="https://github.com/Wmurciarey9/connectify"
-        description="I am building a clone for meetup. My intent is that in the future it can be it's own app with it's own features but similar workflow as meetup, since in Colombia we don't have something like that. I intend to create and deploy in stores eventually. "
+        description="Meetup inspired / clone. An app to connect people for diverse events. Implementing this in my country since we don't have meetup "
         techOne="React"
         techTwo="Saas"
         techThree="Strapi"
@@ -59,7 +59,7 @@ export const Projects = () => {
         img="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmV0ZmxpeHxlbnwwfHwwfHw%3D&w=1000&q=80"
         liveUrl="https://wilsonmrey-netflix-clone.netlify.app/"
         gitHub="https://github.com/Wmurciarey9/clone-netflix-react"
-        description="Cloned latest version UI of netflix. Added a navigation overlay to access all available pages. (Login, Home, Profiles, Watch) This is only the front end site. I have a full stack version with it's own database. Login and register process working. Also an admin exclusive dashboard to manage. Only issue is that there is no movies inside the database. "
+        description="Cloned latest version UI of netflix. Added a navigation overlay to access all available pages (Login, Home, Profiles, Watch). This is only the front end site. Movie app with Netflix UI"
         techOne="React"
         techTwo="Saas"
         techThree="HTML"

@@ -1,23 +1,39 @@
 @import "../../app.scss";
+@import "../../breakpoints/breakpoints.scss";
 
 .project {
   display: flex;
   align-items: center;
-  height: 500px;
+  height: 30vh;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+  margin: 50px 0;
+  border-radius: 10px;
+  padding: 50px 20px 50px 50px;
+  box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37);
+  gap: 40px;
 
   .left {
-    width: 50%;
+    width: 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    text-align: center;
 
     h2 {
       margin: 10px 0;
       top: 0;
     }
     .skillsUsed {
-      margin-top: 10px;
-      height: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 0px;
+
       @include mobile {
         height: 100px;
         margin-top: 230px;
@@ -28,7 +44,7 @@
       }
 
       span {
-        font-size: 17px;
+        font-size: 15px;
         border-width: 3px;
         border-style: solid;
         border-image: linear-gradient(
@@ -38,13 +54,14 @@
           )
           1 100%;
         text-decoration: none;
+        text-align: center;
         padding: 5px 15px;
-        margin-right: 10px;
       }
     }
 
     p {
-      height: 200px;
+      height: 30%;
+      text-align: center;
 
       @include mobile {
         margin-top: 20px;
@@ -69,15 +86,28 @@
     }
 
     .buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .whiteBtn {
+        background-color: white;
+        background-image: none;
+        border: 1px solid black;
+        a {
+          color: black;
+        }
+      }
+
       button {
         padding: 10px 20px;
-        margin: 20px 10px 0 0;
         background-image: linear-gradient(rgb(93, 38, 183), rgb(57, 117, 219));
         color: white;
         font-size: 15px;
         font-weight: 500;
         border: none;
         cursor: pointer;
+        box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.37);
         &:hover {
           scale: 1.1;
           transition: ease-in-out 0.3s;
@@ -115,11 +145,12 @@
     }
   }
   .right {
-    width: 50%;
+    width: 55%;
     .image {
-      width: 440px;
-      height: 350px;
-      object-fit: cover;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      width: 100%;
+      height: 100%;
+      object-fit: cover top;
       align-items: center;
       justify-content: center;
       border-radius: 10px;
@@ -133,6 +164,7 @@
     width: 100%;
     height: auto;
     margin-bottom: 70px;
+    padding: 10px;
     .left {
       width: 100%;
       .skillsUsed {
@@ -160,9 +192,9 @@
 
       .image {
         position: relative;
-        top: 30px;
+        top: 60px;
         overflow: hidden;
-        width: 400px;
+        width: 90%;
         margin-top: 30px;
         height: 200px;
       }
