@@ -129,8 +129,36 @@
     }
   }
   @include media(">=phone", "<=425px") {
+    margin: 0 7%;
+    h1 {
+      font-size: 55px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+
+    .miniNavbar {
+      span {
+        padding: 5px 10px;
+        margin-right: 20px;
+      }
+    }
   }
   @include media(">=425px", "<=tablet") {
+    margin: 0 7%;
+    h1 {
+      font-size: 55px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+
+    .miniNavbar {
+      span {
+        padding: 5px 10px;
+        margin-right: 20px;
+      }
+    }
   }
 }
 
