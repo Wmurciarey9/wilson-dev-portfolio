@@ -13,7 +13,7 @@ export const Project = (props) => {
         backgroundImage:
           darkMode &&
           'url("https://www.transparenttextures.com/patterns/diagmonds.png")',
-        backgroundColor: "black",
+        backgroundColor: darkMode && "black",
       }}
     >
       <div className="left">
