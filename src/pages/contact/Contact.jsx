@@ -1,12 +1,11 @@
 import "./contact.scss";
 
-import Phone from "../../components/images/phone.png";
-import Email from "../../components/images/email.png";
-import Address from "../../components/images/address.png";
-import { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ThemeContext } from "../../context";
+import { useContext, useRef, useState } from "react";
+import Email from "../../components/images/email.png";
+import Phone from "../../components/images/phone.png";
 import { Navbar } from "../../components/navbar/Navbar";
+import { ThemeContext } from "../../context";
 
 import { Toggle } from "../../components/toggle/Toggle";
 
@@ -21,7 +20,12 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_v4l8fhq", "template_qc3ohqk", formRef.current, "u_grGElhpORT6KAhe")
+      .sendForm(
+        "service_v4l8fhq",
+        "template_qc3ohqk",
+        formRef.current,
+        "u_grGElhpORT6KAhe"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -34,7 +38,12 @@ const Contact = () => {
   };
 
   return (
-    <div style={{ backgroundColor: darkMode ? "#424242" : "", color: darkMode && "whitesmoke" }}>
+    <div
+      style={{
+        backgroundColor: darkMode ? "#141516" : "",
+        color: darkMode && "whitesmoke",
+      }}
+    >
       <Toggle />
       <Navbar />
       <div className="c">
@@ -55,7 +64,8 @@ const Contact = () => {
           </div>
           <div className="c-right">
             <p className="c-desc">
-              <b>Hey! Let's connect,</b> looking forward to hearing more from you.
+              <b>Hey! Let's connect,</b> looking forward to hearing more from
+              you.
             </p>
             <form ref={formRef} onSubmit={sendEmail}>
               <input

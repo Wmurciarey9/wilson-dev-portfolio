@@ -1,17 +1,17 @@
 import "./navbar.scss";
 
-import Logo from "../../images/brandTransparent.png";
-import WhiteLogo from "../../images/whiteTransparent.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../context";
+import Logo from "../../images/brandTransparent.png";
+import WhiteLogo from "../../images/whiteTransparent.png";
 import WilsonDevCV from "./CVWilsonDev.pdf";
 
 import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css"; // optional
 import { Link } from "react-router-dom";
+import "tippy.js/dist/tippy.css"; // optional
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +28,7 @@ export const Navbar = () => {
     <div
       className={isScrolled ? "navbar scrolled" : "navbar"}
       style={{
-        backgroundColor: darkMode ? "#303030" : "",
+        backgroundColor: darkMode ? "#141516" : "",
         color: darkMode && "whitesmoke",
       }}
     >
@@ -46,7 +46,11 @@ export const Navbar = () => {
         </div>
         <div className="right">
           <div className="iconItem">
-            <a href="https://github.com/Wmurciarey9" target="_blank">
+            <a
+              href="https://github.com/Wmurciarey9"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Tippy content="GitHub">
                 <GitHubIcon
                   className="icon"
@@ -56,7 +60,11 @@ export const Navbar = () => {
             </a>
           </div>
           <div className="iconItem">
-            <a href="https://www.linkedin.com/in/wmurciarey" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/wmurciarey"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Tippy content="LinkedIn">
                 <LinkedInIcon
                   className="icon"

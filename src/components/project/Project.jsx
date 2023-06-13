@@ -9,10 +9,11 @@ export const Project = (props) => {
   return (
     <div
       className="project"
+      id="project-section"
       style={{
         backgroundImage:
           darkMode &&
-          'url("https://www.transparenttextures.com/patterns/diagmonds.png")',
+          'url("https://www.transparenttextures.com/patterns/inspiration-geometry.png")',
         backgroundColor: darkMode && "black",
       }}
     >
@@ -29,12 +30,12 @@ export const Project = (props) => {
 
         <div className="buttons">
           <button className="whiteBtn">
-            <a href={props.liveUrl} target="_blank">
+            <a href={props.liveUrl} target="_blank" rel="noreferrer">
               See Live
             </a>
           </button>
           <button>
-            <a href={props.gitHub} target="_blank">
+            <a href={props.gitHub} target="_blank" rel="noreferrer">
               Source Code
             </a>
           </button>

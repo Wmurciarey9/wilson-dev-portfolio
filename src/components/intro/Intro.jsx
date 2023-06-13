@@ -1,9 +1,25 @@
-import React from "react";
-import "./intro.scss";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../../context";
 import Arrow from "../images/arrow.gif";
+import "./intro.scss";
 
 export const Intro = () => {
+  const projectBtn = () => {
+    document
+      .querySelector("#project-section")
+      .scrollIntoView({ behavior: "smooth" });
+  };
+  // const skillsBtn = () => {
+  //   document
+  //     .querySelector("#skills-section")
+  //     .scrollIntoView({ behavior: "smooth" });
+  // };
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro">
       <h1>
@@ -16,9 +32,17 @@ export const Intro = () => {
         <p>Get my CV here!</p>
       </div>
       <div className="miniNavbar">
-        <span>Skills</span>
-        <span>Projects</span>
-        <span>About</span>
+        {/* <Link onClick={skillsBtn} to="/">
+          <span>Skills</span>
+        </Link>
+        <FiberManualRecordIcon className="icon" /> */}
+        <Link onClick={projectBtn} to="/">
+          <span style={{ color: darkMode && "#fff" }}>Projects</span>
+        </Link>
+        <FiberManualRecordIcon className="icon" />
+        <Link to={`/about`}>
+          <span style={{ color: darkMode && "#fff" }}>About</span>
+        </Link>
       </div>
       <div className="buttons">
         <Link to={`/contact`}>

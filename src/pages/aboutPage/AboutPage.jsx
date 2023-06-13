@@ -1,16 +1,11 @@
 import React, { useContext } from "react";
-import { Footer } from "../../components/footer/Footer";
-import { Intro } from "../../components/intro/Intro";
+import { About } from "../../components/about/About";
 import { Navbar } from "../../components/navbar/Navbar";
-import { Projects } from "../../components/projects/Projects";
-import { Skills } from "../../components/skills/Skills";
 import { Toggle } from "../../components/toggle/Toggle";
 import { ThemeContext } from "../../context";
-
-export const Home = () => {
+export const AboutPage = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-
   return (
     <div
       style={{
@@ -20,10 +15,7 @@ export const Home = () => {
     >
       <Toggle />
       <Navbar />
-      <Intro />
-      <Skills />
-      <Projects />
-      <Footer />
+      <About />
     </div>
   );
 };
