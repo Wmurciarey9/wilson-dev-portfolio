@@ -42,7 +42,7 @@ export const Project = (props) => {
         </div>
       </div>
       <div className="right">
-        <img className="image" src={props.img} alt="" />
+        <img className={props.className} src={props.img} alt="" />
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import React from "react";
+import Car from "../images/Car-Rental-v2.png";
+import Connectify from "../images/Connectify-FullPage.png";
+import Ecommerce from "../images/eCom-fullPage.png";
+import Netflix from "../images/netflix-singIn.png";
 import { Project } from "../project/Project";
 import "./projects.scss";
-import Ecommerce from "../images/eCommerce.png";
-import Connectify from "../images/Connectify-ss.png";
-import Car from "../images/Car-rental.png";
 
 export const Projects = () => {
   return (
@@ -12,13 +13,14 @@ export const Projects = () => {
       <Project
         title="Car Rental"
         img={Car}
-        liveUrl="https://wilreym-car-rental.netlify.app/"
-        gitHub="https://github.com/Wmurciarey9/car-rental"
+        liveUrl="https://car-rental-wilreym.netlify.app/"
+        gitHub="https://github.com/Wmurciarey9/car-rental-v2"
         description="Car rental. Fully functional and market ready. Personal or business needs, search and reserve your cars."
         techOne="React"
         techTwo="Saas"
         techThree="HTML"
         techFour="CSS"
+        className="image car-rental-project"
       />
 
       <Project
@@ -31,6 +33,7 @@ export const Projects = () => {
         techTwo="Saas"
         techThree="Strapi"
         techFour="MySQL"
+        className="image ecom-project"
       />
       <Project
         title="Connectify - A meetup inspired clone"
@@ -42,6 +45,7 @@ export const Projects = () => {
         techTwo="Saas"
         techThree="Strapi"
         techFour="MySQL"
+        className="image connectify-project"
       />
       {/* <Project
         title="Booking App"
@@ -56,7 +60,7 @@ export const Projects = () => {
       /> */}
       <Project
         title="Netflix Clone"
-        img="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmV0ZmxpeHxlbnwwfHwwfHw%3D&w=1000&q=80"
+        img={Netflix}
         liveUrl="https://wilsonmrey-netflix-clone.netlify.app/"
         gitHub="https://github.com/Wmurciarey9/clone-netflix-react"
         description="Cloned latest version UI of netflix. Added a navigation overlay to access all available pages (Login, Home, Profiles, Watch). This is only the front end site. Movie app with Netflix UI"
@@ -64,6 +68,7 @@ export const Projects = () => {
         techTwo="Saas"
         techThree="HTML"
         techFour="CSS"
+        className="image netflix-project"
       />
     </div>
   );
