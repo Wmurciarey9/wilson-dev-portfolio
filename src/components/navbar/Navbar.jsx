@@ -7,7 +7,7 @@ import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../context";
 import Logo from "../../images/brandTransparent.png";
 import WhiteLogo from "../../images/whiteTransparent.png";
-import WilsonDevCV from "./CVWilsonDev.pdf";
+import WilsonCV from "./WilsonCV.pdf";
 
 import Tippy from "@tippyjs/react";
 import { Link } from "react-router-dom";
@@ -74,7 +74,7 @@ export const Navbar = () => {
             </a>
           </div>
           <div className="iconItem">
-            <a href={WilsonDevCV} download="CVWilsonDev.pdf">
+            <a href={WilsonCV} download="CVWilsonDev.pdf">
               <Tippy content="Resume">
                 <InsertDriveFileIcon
                   className="icon"
